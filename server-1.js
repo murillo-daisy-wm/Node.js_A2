@@ -10,7 +10,7 @@ db.once('open', function(){
   console.log("connected correctly to server");
 
   var newPromo = Promotion({
-    name:" The Cereal ",
+    name:" C E R E A L  ",
     image: " ",
     label: "new",
     price: "$2.00",

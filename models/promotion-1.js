@@ -1,11 +1,13 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+require('mongoose-currency').loadType(mongoose);
+var Currency = mongoose.Types.Currency;
 
 var promoSchema = new Schema({
    name: {
        type: String,
        required: true,
-       unique: true
+       unique: false
    },
    image: {
      type: String,
@@ -25,7 +27,7 @@ var promoSchema = new Schema({
        type: String,
        required: true
    },
-   
+
 }, {
    timestamps: true
 });

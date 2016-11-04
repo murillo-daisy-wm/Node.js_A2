@@ -15,7 +15,7 @@ db.once('open', function () {
     console.log("connected correctly to server");
 
     Leadership.create({
-      name: ' The Daisy ',
+      name: 'Daisy',
       image: ' ',
       designation: ' Chief Executive Officer',
       abbr: 'CEO',
